@@ -1,0 +1,71 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #cccccc;
+}
+
+.header_signature {
+  display: block;
+  text-align: right;
+}
+
+.form-label {
+  display: block;
+}
+
+.main {
+  padding-top: 20px;
+}
+
+.form {
+  font-size: 24px;
+}
+
+.form-label {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  font: inherit;
+}
+
+.button {
+  font: inherit;
+}
+
+.error, .rezult {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rezult-text {
+  font-size: 24px;
+  color: green;
+}
+
+.error-text {
+  font-size: 24px;
+  color: red;
+}
+
+@media (max-width: 640px) {
+  .form {
+    font-size: 20px;
+  }
+}

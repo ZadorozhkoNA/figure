@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Калькулятор фигуры</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header class="header">
+      <div class="box">
+        <h1 class="header_title">
+          Калькулятор фигуры
+        </h1>
+        <span class="header_signature">
+          г. Рязань, средняя школа № 64
+        </span>
+        <span class="header_signature">
+          учитель технологии
+        </span>
+        <span class="header_signature">
+          Задорожко Лилия Алексеевна
+        </span>
+      </div>
+    </header>
+
+    <main class="main box">
+      <form class="form">
+        <label class="form-label"> Введите объем груди:
+          <input type="text" name="form-breast" inputmode="numeric" required placeholder="Объем груди">
+        </label>
+        <label class="form-label"> Введите объем талии:
+          <input type="text" name="form-waist" inputmode="numeric" required placeholder="Объем талии">
+        </label>
+        <label class="form-label"> Введите объем бедер:
+          <input type="text" name="form-hips" inputmode="numeric" required placeholder="Объем бедер">
+        </label>
+        <button class="button" type="button" name="form-button">Подсчитать</button>
+      </form>
+      <div class="error">
+        <span class="error-text">Нужно заполнить все поля!</span>
+      </div>
+      <div class="rezult">
+        <span class="rezult-text"></span> 
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script type="text/javascript" src="js-script.js"> </script>
+
+  </body>
+</html>
