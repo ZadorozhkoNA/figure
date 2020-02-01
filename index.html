@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Калькулятор фигуры</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
   <body>
     <header class="header">
@@ -19,7 +21,7 @@
         <span class="header_signature">
           учитель технологии
         </span>
-        <span class="header_signature">
+        <span class="header_signature header_signature-name">
           Задорожко Лилия Алексеевна
         </span>
       </div>
@@ -28,13 +30,13 @@
     <main class="main box">
       <form class="form">
         <label class="form-label"> Введите объем груди:
-          <input type="text" name="form-breast" inputmode="numeric" required placeholder="Объем груди">
+          <input type="text" name="form-breast" inputmode="numeric" required>
         </label>
         <label class="form-label"> Введите объем талии:
-          <input type="text" name="form-waist" inputmode="numeric" required placeholder="Объем талии">
+          <input type="text" name="form-waist" inputmode="numeric" required>
         </label>
         <label class="form-label"> Введите объем бедер:
-          <input type="text" name="form-hips" inputmode="numeric" required placeholder="Объем бедер">
+          <input type="text" name="form-hips" inputmode="numeric" required>
         </label>
         <button class="button" type="button" name="form-button">Подсчитать</button>
       </form>
@@ -42,7 +44,7 @@
         <span class="error-text">Нужно заполнить все поля!</span>
       </div>
       <div class="rezult">
-        <span class="rezult-text"></span> 
+        <span class="rezult-text"></span>
       </div>
     </main>
 

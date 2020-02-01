@@ -1,4 +1,5 @@
 body, html {
+  font-family: 'Marmelad', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,6 +12,8 @@ body, html {
   margin-right: auto;
 }
 
+/* Шапка сайта */
+
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -22,19 +25,30 @@ body, html {
   text-align: right;
 }
 
-.form-label {
-  display: block;
+.header_title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
 }
 
+/* Контент */
 .main {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
 }
 
 .form {
-  font-size: 24px;
+  display: block;
+  flex: 0 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-label {
+  display: block;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -42,6 +56,7 @@ body, html {
 
 input {
   font: inherit;
+  width: 100px;
 }
 
 .button {
@@ -55,17 +70,57 @@ input {
 }
 
 .rezult-text {
-  font-size: 24px;
   color: green;
 }
 
 .error-text {
-  font-size: 24px;
   color: red;
 }
 
 @media (max-width: 640px) {
+
+  .header_title {
+    font-size: 36px;
+  }
+
+  .header_signature {
+    font-size: 12px;
+  }
+
+  .header_signature-name {
+    font-size: 20px;
+  }
+
   .form {
     font-size: 20px;
+  }
+
+  .rezult-text,
+  .error-text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 641px) {
+
+  .header_signature {
+    font-size: 16px;
+  }
+
+  .header_signature-name {
+    font-size: 24px;
+  }
+
+  .header_title {
+    font-size: 48px;
+  }
+
+  .form {
+    font-size: 24px;
+  }
+
+  .rezult-text,
+  .error-text {
+    font-size: 24px;
   }
 }
