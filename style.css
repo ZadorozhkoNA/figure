@@ -2,6 +2,16 @@ body, html {
   font-family: 'Marmelad', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  color: #0000ff;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .box {
@@ -15,9 +25,10 @@ body, html {
 /* Шапка сайта */
 
 .header {
+  flex: 0 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #cccccc;
+  background: linear-gradient(to top, #ffffff, #ffd700);
 }
 
 .header_signature {
@@ -26,23 +37,22 @@ body, html {
 }
 
 .header_title {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  color: #ffffff;
+  color: #32cd32;
 }
 
 /* Контент */
 .main {
-  display: flex;
-  flex-wrap: wrap;
+  flex: 1 0 auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .form {
   display: block;
-  flex: 0 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,27 +64,72 @@ body, html {
   padding-bottom: 10px;
 }
 
+
+.button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 input {
   font: inherit;
   width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fffacd;
 }
 
-.button {
+.button,
+.revers {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
   font: inherit;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #fffacd;
+  color: #32cd32;
 }
 
 .error, .rezult {
   display: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  min-width: 100%;
 }
 
 .rezult-text {
+  display: block;
   color: green;
+  margin-bottom: 20px;
+}
+
+.rezult-img {
+  display: block;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .error-text {
   color: red;
+}
+
+/* Подвал */
+
+.footer {
+  flex: 0 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to top, #ffd700, #ffffff);
 }
 
 @media (max-width: 640px) {
@@ -122,5 +177,10 @@ input {
   .rezult-text,
   .error-text {
     font-size: 24px;
+  }
+
+  .button:hover,
+  .revers:hover {
+    background-color: #ffd700;
   }
 }

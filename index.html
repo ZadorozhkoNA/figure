@@ -29,26 +29,33 @@
 
     <main class="main box">
       <form class="form">
-        <label class="form-label"> Введите объем груди:
+        <label class="form-label"> Объем груди:
           <input type="text" name="form-breast" inputmode="numeric" required>
         </label>
-        <label class="form-label"> Введите объем талии:
+        <label class="form-label"> Объем талии:
           <input type="text" name="form-waist" inputmode="numeric" required>
         </label>
-        <label class="form-label"> Введите объем бедер:
+        <label class="form-label"> Объем бедер:
           <input type="text" name="form-hips" inputmode="numeric" required>
         </label>
-        <button class="button" type="button" name="form-button">Подсчитать</button>
+        <button class="button" type="submit" name="form-button">Подсчитать</button>
       </form>
       <div class="error">
         <span class="error-text">Нужно заполнить все поля!</span>
       </div>
       <div class="rezult">
         <span class="rezult-text"></span>
+        <img class="rezult-img" src="" alt="">
+        <a href="#0" class="revers">Вернуться</a>
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <div class="box">
+        <span class="header_signature">
+          тут могла бы быть ваша реклама
+        </span>
+      </div>
     </footer>
 
     <script type="text/javascript" src="js-script.js"> </script>
