@@ -13,7 +13,7 @@ function selectKey( event ) {
   if ( !event.code ) return;
   if ( event.repeat ) event.preventDefault();
   const keyArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  const keySuperArray = ['Enter', 'Delete', 'Backspace', 'Tab'];
+  const keySuperArray = ['Enter', 'Delete', 'Backspace', 'Tab', 'Shift'];
 
   let control = false;
   for ( const key of keyArray ) {
@@ -29,6 +29,8 @@ function selectKey( event ) {
     }
   }
 
+  if ( event.key === '.' || event.key === ',' ) control = true;
+
   if ( control === false ) {
     event.preventDefault();
   }
@@ -36,6 +38,7 @@ function selectKey( event ) {
 
 // Ф-ия преобразования строки в число
 function forNumber( str ) {
+  str = str.replace( ',' , '.' );
   str = Number( str );
   if (!str) {
     error.style.display = 'block';
