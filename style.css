@@ -26,8 +26,6 @@ body {
 
 .header {
   flex: 0 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
   background: linear-gradient(to top, #ffffff, #ffd700);
 }
 
@@ -37,8 +35,6 @@ body {
 }
 
 .header_title {
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
   font-family: 'Pacifico', cursive;
   color: #32cd32;
@@ -132,7 +128,23 @@ input {
   background: linear-gradient(to top, #ffd700, #ffffff);
 }
 
+.footer_signature {
+  display: block;
+  text-align: center;
+}
+
 @media (max-width: 640px) {
+
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header_title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
 
   .header_title {
     font-size: 36px;
@@ -157,6 +169,16 @@ input {
 }
 
 @media (min-width: 641px) {
+
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   .header_signature {
     font-size: 16px;
