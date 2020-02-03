@@ -39,7 +39,7 @@ function selectKey( event ) {
 // Ф-ия преобразования строки в число
 function forNumber( str ) {
   str = str.replace( ',' , '.' );
-  str = Number( str );
+  str = Math.abs( Number( str ) );
   if (!str) {
     error.style.display = 'block';
     return false;

@@ -154,10 +154,6 @@ input {
     font-size: 12px;
   }
 
-  .header_signature-name {
-    font-size: 20px;
-  }
-
   .form {
     font-size: 20px;
   }
@@ -182,10 +178,6 @@ input {
 
   .header_signature {
     font-size: 16px;
-  }
-
-  .header_signature-name {
-    font-size: 24px;
   }
 
   .header_title {
