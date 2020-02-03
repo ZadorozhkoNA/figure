@@ -89,7 +89,7 @@ function calc( event ) {
 
 for (let item of form ) {
   if ( item.type === 'text' ) {
-    item.addEventListener( 'keypress', selectKey );
+    item.addEventListener( 'keydown', selectKey );
   };
 };
 
