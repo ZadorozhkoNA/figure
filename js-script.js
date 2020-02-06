@@ -67,24 +67,24 @@ function calc( event ) {
   if ( breast && waist && hips ) { rezult.style.display = 'block' }
   else { return } ;
 
-  if ( Math.abs( breast - hips ) <= 5 &&  hips - waist >= 20 ) {
-    rezultOut ( 'Песочные часы', './img/hourglass.jpg' );
-  }
-    else if ( Math.abs( breast - hips ) <= 5 &&  hips - waist < 20  &&  hips - waist > 5) {
-    rezultOut ( 'Прямоугольник', './img/rect.jpg' );
-  }
-    else if ( hips - breast > 5 ) {
-    rezultOut ( 'Треугольник', './img/triangle.jpg' );
-  }
-    else if ( breast - hips > 5 ) {
-    rezultOut ( 'Перевернутый треугольник', './img/triangle_rew.jpg' );
-  }
-    else if ( Math.abs( breast - hips ) <= 5 && Math.abs( breast - waist ) <= 5 && Math.abs( hips - waist ) <= 5 ) {
-    rezultOut ( 'Круг', './img/oval.jpg' );
-  }
-    else {
-    rezultOut ( 'Ваша фигура, этой программой не предусмотрена, обратитесь к учителю', './img/cat.jpg' );
-  }
+  if ( Math.abs( breast - hips ) <= 5 &&  hips - waist >= breast / 4 ) {
+      rezultOut ( 'Песочные часы', './img/hourglass.jpg' );
+    }
+      else if ( Math.abs( breast - hips ) <= 5 &&  hips - waist < breast / 4  &&  hips - waist > 5) {
+      rezultOut ( 'Прямоугольник', './img/rect.jpg' );
+    }
+      else if ( hips - breast > 5 ) {
+      rezultOut ( 'Треугольник', './img/triangle.jpg' );
+    }
+      else if ( breast - hips > 5 ) {
+      rezultOut ( 'Перевернутый треугольник', './img/triangle_rew.jpg' );
+    }
+      else if ( Math.abs( breast - hips ) <= 5 && Math.abs( breast - waist ) <= 5 && Math.abs( hips - waist ) <= 5 ) {
+      rezultOut ( 'Круг', './img/oval.jpg' );
+    }
+      else {
+      rezultOut ( 'Ваша фигура, этой программой не предусмотрена, обратитесь к учителю', './img/cat.jpg' );
+    }
 }
 
 for (let item of form ) {
